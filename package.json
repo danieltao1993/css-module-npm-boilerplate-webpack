@@ -1,23 +1,23 @@
 {
-  "name": "Tui",
+  "name": "didi-ui",
   "version": "1.0.2",
   "description": "a boilerplate css module",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danieltao1993/css-module-npm-boilerplate-webpack.git"
+    "url": "git+https://github.com/danieltao1993/css-module-npm-boilerplate-webpack.git"
   },
   "scripts": {
     "build": "webpack"
   },
   "devDependencies": {
-    "autoprefixer": "^6.1.0",
-    "css-loader": "^0.15.1",
-    "extract-text-webpack-plugin": "^0.9.1",
-    "postcss-loader": "^0.7.0",
+    "autoprefixer": "^7.2.5",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "postcss-loader": "^2.0.10",
     "postcss-modules-values": "^1.1.1",
-    "style-loader": "^0.13.0",
-    "webpack": "^1.9.6"
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0"
   },
   "keywords": [
     "css",
@@ -25,6 +25,15 @@
     "css module",
     "css-module-npm-boilerplate"
   ],
-  "author": "Steven Iseki <kongwentao1993@gmail.com>",
-  "license": "MIT"
+  "author": "Daniel Kong <kongwentao1993@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danieltao1993/css-module-npm-boilerplate-webpack/issues"
+  },
+  "homepage": "https://github.com/danieltao1993/css-module-npm-boilerplate-webpack#readme",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "dependencies": {}
 }

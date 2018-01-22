@@ -24,6 +24,7 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
+    "didi-ui": "^1.0.2",
     "react": "^0.14.0",
     "react-css-modules": "^3.6.1",
     "react-dom": "^0.14.0"
