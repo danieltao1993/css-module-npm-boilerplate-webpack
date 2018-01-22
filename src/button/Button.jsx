@@ -1,20 +1,11 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
+import _style from '../../lib/button.css'
 
 let styles = {}
-import demo from './Demo.css'
+Object.assign(styles, _style)
 
-console.log('demo css',demo);
-/* 
-  import { fancyButton } from 'css-fancy-button'
-  import fancyButton from 'css-fancy-button'
-*/
-
-import fancyButton from '../../../lib/fancyButton.css'
-
-Object.assign(styles, fancyButton, demo)
-
-function Demo( props) {
+function Button( props) {
 
     const { route } = props;
 
@@ -27,4 +18,4 @@ function Demo( props) {
     );
 }
 
-export default CSSModules(Demo, styles, {allowMultiple: true} )
+export default CSSModules(Button, styles, {allowMultiple: true} )

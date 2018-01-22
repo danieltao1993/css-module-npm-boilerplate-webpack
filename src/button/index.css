@@ -5,6 +5,13 @@
 @value colors: "./colors.css";
 @value blue, white, red, green from colors;
 
+
+.container {
+  padding: 20px;
+  width:200px;
+  margin:0 auto;
+}
+
 .button {
   color: white;
   display: inline-block;

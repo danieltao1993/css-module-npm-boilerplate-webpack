@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Demo from './components/Demo';
 import Test from './components/Test';
+import BG from './components/BG';
 
 function App(props) {
     return (
-        <main>
+        <div>
             <Demo />
             <hr/>
             <Test />
-        </main>        
+            <hr/>
+            <BG />
+            <hr/>
+        </div>        
     );
 }
 
