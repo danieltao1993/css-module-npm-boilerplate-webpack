@@ -1,18 +1,22 @@
 'use strict';
 
-var fancyButtonCss = require('./lib/css/fancyButton.css'); 
-var buttonGroupCss = require('./lib/css/buttonGroup.less'); 
+var buttonCss = require('./lib/css/Button.css'); 
+var buttonGroupCss = require('./lib/css/buttonGroup.css'); 
 
-var fancyButton = require('./lib/components/fancyButton.jsx'); 
-var buttonGroup = require('./lib/components/buttonGroup.jsx'); 
+// var Button = require('./lib/components/Button.jsx'); 
+// var ButtonGroup = require('./lib/components/ButtonGroup.jsx'); 
+import Button from './src/button/Button.jsx';
+import ButtonGroup from './src/buttonGroup/ButtonGroup.jsx';
 
+// var Button = require('./src/button/Button.jsx'); 
+// var ButtonGroup = require('./src/buttonGroup/ButtonGroup.jsx'); 
 
 module.exports = {
-	fancyButtonCss: fancyButtonCss,
+	buttonCss: buttonCss,
 	buttonGroupCss: buttonGroupCss,
 
-	fancyButton: fancyButton,
-	buttonGroup: buttonGroup
+	Button: Button,
+	ButtonGroup: ButtonGroup
 };
 
-// module.exports = fancyButton;
+// module.exports = Button;

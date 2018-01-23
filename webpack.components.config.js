@@ -4,18 +4,25 @@ var autoprefixer = require('autoprefixer');
 var values = require('postcss-modules-values');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+// new ExtractTextPlugin('css/voter.bundle.css', {
+//     allChunks: true
+//   })
 // 多个提取实例
-const extractCSS = new ExtractTextPlugin('[name].css');
-const extractLESS = new ExtractTextPlugin('[name].less');
+const extractCSS = new ExtractTextPlugin('../css/[name].css');
+const extractLESS = new ExtractTextPlugin('../css/[name].css');
 
 module.exports = {
-    entry: {
-        'fancyButton': './src/button/index.css',
-        'buttonGroup': './src/buttonGroup/index.less',
-    },
+    entry:'./components.js',
+    // entry: {
+    //     'Button': './src/button/Button.jsx',
+    //     'ButtonGroup': './src/buttonGroup/ButtonGroup.jsx',
+    // },
     output: {
-        path: path.join(__dirname, 'lib'),
-        filename: '[name].css' //出口名称
+        path: path.join(__dirname, 'lib/components'),
+        // filename: '[name].css' //出口名称
+        filename: 'bundle.js', // 可以打包为多个文件
+        libraryTarget: 'umd',
+        library: 'lib/components',
     },
     module: {
         rules: [{
@@ -78,7 +85,4 @@ module.exports = {
             filename: 'style.css'
         })
     ]
-    // plugins: [
-    //     new ExtractTextPlugin("fancyButton.css")
-    // ]
 }

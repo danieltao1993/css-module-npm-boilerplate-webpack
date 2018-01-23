@@ -1,6 +1,7 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import _style from '../../lib/button.css'
+import _style from '../../lib/css/button.css'
+// import _style from './index.css'
 
 let styles = {}
 Object.assign(styles, _style)

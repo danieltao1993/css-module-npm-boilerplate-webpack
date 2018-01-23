@@ -2,6 +2,13 @@
   a fancy button - just a demo css module
 */
 
+
+.container {
+  padding: 20px;
+  width:200px;
+  margin:0 auto;
+}
+
 .button {
   color: #fff;
   display: inline-block;
@@ -45,4 +52,29 @@
 
 .green:hover {
   color: #aaf200;
+}
+.button_group {
+  text-align: center;
+}
+.button_group .radio {
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  font-size: 12px;
+  color: #000;
+  padding: 5px 15px;
+  outline: none;
+  cursor: pointer;
+  margin: 0px 0px 0px -1px;
+}
+.button_group .radio.active {
+  background: #f4f8ff;
+  color: #6c91df;
+}
+.button_group .radio:first-child {
+  margin-left: 0px;
+  border-radius: 4px 0 0 4px;
+}
+.button_group .radio:last-child {
+  border-radius: 0 4px 4px 0;
 }

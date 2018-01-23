@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Demo from './components/Demo';
+// import Demo from './components/Demo';
 import Test from './components/Test';
-import BG from './components/BG';
-
+// import {Button} from '../../index.js';
+import {Button} from '../../lib/components/bundle.js';
+// import Button from '../../lib/components/Button.js';
+// import Button from '../../src/buttonGroup/Button.jsx';
+console.log('Button',Button,require('../../lib/components/bundle.js'))
 function App(props) {
     return (
         <div>
-            <Demo />
+            {/* <Demo /> */}
             <hr/>
-            <Test />
+            {/* <Test /> */}
             <hr/>
-            <BG />
+            <Button />
             <hr/>
         </div>        
     );

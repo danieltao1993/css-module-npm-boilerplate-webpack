@@ -1,14 +1,16 @@
 {
   "name": "didi-ui",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "a boilerplate css module",
-  "main": "index.js",
+  "main": "lib/components/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danieltao1993/css-module-npm-boilerplate-webpack.git"
   },
   "scripts": {
-    "build": "webpack"
+    "build:css": "webpack --config ./webpack.css.config.js",
+    "build:jsx": "webpack --config ./webpack.components.config.js",
+    "build": "npm run build:css && npm run build:jsx"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -20,6 +22,8 @@
     "sass-loader": "^6.0.6"
   },
   "devDependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
     "autoprefixer": "^7.2.5",
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -28,7 +32,9 @@
     "postcss-loader": "^2.0.10",
     "postcss-modules-values": "^1.1.1",
     "style-loader": "^0.19.1",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "react-css-modules": "^4.7.1",
+    "uncontrollable": "^4.1.0"
   },
   "keywords": [
     "css",

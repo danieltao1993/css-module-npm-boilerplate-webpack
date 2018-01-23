@@ -4,10 +4,11 @@ import uncontrollable from 'uncontrollable'
 
 let styles = {}
 import _style from '../../lib/css/buttonGroup.css'
-// import _style from './buttonGroup.css'
+// import _style from '../../lib/css/buttonGroup.css'
+// import _style from './index.less'
 
 Object.assign(styles, _style)
-
+console.log('ButtonGroup',_style);
 class ButtonGroup extends React.Component {
     constructor(args) {
         super(args);

@@ -10,7 +10,7 @@ console.log('demo css',demo);
   import fancyButton from 'css-fancy-button'
 */
 
-import fancyButton from '../../../lib/fancyButton.css'
+import fancyButton from '../../../lib/css/button.css'
 
 Object.assign(styles, fancyButton, demo)
 
